@@ -1,0 +1,57 @@
+{
+    "login": {
+        "username": "usuario@mail.com",
+        "name": "usuario"
+    },
+    "folders": [
+        { 
+            "name" : "Categoria 1"
+        },
+        { 
+            "name" : "Categoria 2"
+        },
+        { 
+            "name" : "Categoria 3"
+        },
+        { 
+            "name" : "Categoria 4"
+        },
+        { 
+            "name" : "Categoria 5"
+        },
+        { 
+            "name" : "Categoria 6"
+        },
+        { 
+            "name" : "Categoria 7"
+        },
+        { 
+            "name" : "Categoria 8"
+        },
+        { 
+            "name" : "Categoria 9"
+        },
+        { 
+            "name" : "Categoria 10"
+        }
+    ],
+    "reports": [
+        { 
+            "name": "Reporte 1",
+            "id": 1
+        },
+        { 
+            "name": "Reporte 2",
+            "id": 2
+        },
+        { 
+            "name": "Reporte 3",
+            "id": 3
+        },
+        { 
+            "name": "Reporte 4",
+            "id": 4
+        }
+    ]
+
+}

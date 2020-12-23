@@ -1,0 +1,31 @@
+<div class="contenido">
+
+    <div class="contenedor-izq">
+        <div>
+            <h1>BECAJAVA2020</h1>
+            <div class="usuario">
+                <img src="assets/Elipse 5.png">
+                <p>José Lobos Sanhueza</p>
+            </div>
+            <ul class="lista-informaciones">
+                <li><a href="">Informaciones</a></li>
+                <ul>
+                    <li (click)="notShow()">
+                        <a [routerLink]="['dos']">Reportes</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <a [routerLink]="['']">Cerrar sesión</a>
+    </div>
+    
+    <div class="contenedor-der">
+        <div class="cabecera">
+            <img src="assets/btn-menu.png">
+            <p>ES</p>
+        </div>
+        <img *ngIf="showImage" src="assets/Grupo 427.png">
+        <router-outlet></router-outlet>
+    </div>
+    
+</div>

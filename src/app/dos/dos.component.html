@@ -1,0 +1,18 @@
+<div>
+    <h2>Reportes</h2>
+
+    <div class="contenido-reportes">
+        <h3>Categorías</h3>
+        <ul>
+            <li *ngFor="let folder of folders">
+                <app-folder [folder]="folder" (folderClick)="onFolderClick($event)"></app-folder>
+            </li>
+        </ul>
+        <ul>
+            <li *ngFor="let report of reports">
+                <app-folder [report]="report"></app-folder>
+            </li>
+        </ul>
+    </div>
+
+</div>
