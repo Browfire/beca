@@ -8,10 +8,13 @@
                 <p>José Lobos Sanhueza</p>
             </div>
             <ul class="lista-informaciones">
-                <li><a href="">Informaciones</a></li>
+                <li><a>Informaciones</a></li>
                 <ul>
                     <li (click)="notShow()">
-                        <a [routerLink]="['dos']">Reportes</a>
+                        <a [routerLink]="['/uno/dos']">Reportes</a>
+                    </li>
+                    <li (click)="notShow()">
+                        <a [routerLink]="['/uno/menu']">Extras</a>
                     </li>
                 </ul>
             </ul>

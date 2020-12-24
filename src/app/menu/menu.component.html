@@ -1,6 +1,16 @@
-<h2>Este es el componente menu</h2>
-<ul>
-    <li><a routerLink="uno">uno</a></li>
-    <li><a routerLink="dos">dos</a></li>
-    <li><a routerLink="ultimo">tres</a></li>
-</ul>
+<div class="menu">
+    <h4>Menu</h4>
+
+    <form [formGroup]="formMenu" (submit)="onSubmit()">
+
+        <select formControlName = "selectCategories">
+            <option *ngFor="let category of categories">{{ category.name }}</option>
+        </select>
+
+        <select formControlName = "selectReports">
+            <option *ngFor="let report of reports">{{ report.name }}</option>
+        </select>
+
+        <input type="submit" placeholder="Seleccionar" value="Seleccionar">
+    </form> 
+</div>

@@ -5,7 +5,7 @@
         <h3>Categorías</h3>
         <ul>
             <li *ngFor="let folder of folders">
-                <app-folder [folder]="folder" (folderClick)="onFolderClick($event)"></app-folder>
+                <app-folder [folder]="folder" (click)="onFolderClick(folder)"></app-folder>
             </li>
         </ul>
         <ul>
@@ -13,6 +13,40 @@
                 <app-folder [report]="report"></app-folder>
             </li>
         </ul>
+    </div>
+
+    <div class="categoria-detalle" *ngIf="selectedFolder">
+        <h4>{{ selectedFolder }}</h4>
+
+        <form [formGroup]="formOne" (submit)="onSubmit()">
+            <select formControlName = "select">
+                <option>Selecciona un reporte</option>
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+            </select>
+            <input type="submit" placeholder="Acceder" value="Acceder">
+        </form>
+
+        <form [formGroup]="formTwo" (submit)="onSubmit2()">
+            <h5>Información requerida</h5>
+            <label for="periodo">Ingrese período</label>
+            <input type="date" placeholder="Ingrese período" formControlName = "date">
+            <label for="param1">Ingrese parámetro 1</label>
+            <input type="text" placeholder="Ingrese parámetro 1" formControlName = "text1">
+            <label for="param2">Ingrese parámetro 2</label>
+            <input type="text" placeholder="Ingrese parámetro 2" formControlName = "text2">
+            <label for="archivo">Ingrese archivo</label>
+            <input type="file" placeholder="Ingrese archivo" formControlName = "file">
+
+            <input type="submit" placeholder="Probar" value="Probar">
+
+        </form>
+        
+        <div>
+            <input type="button" value="Planificar Reporte">
+            <input type="button" value="Ejecutar reporte">
+        </div>
     </div>
 
 </div>
