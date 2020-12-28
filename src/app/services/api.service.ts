@@ -19,4 +19,8 @@ export class ApiService {
   getReports(): Observable<any> {
     return this.http.get(`${this.baseUrl}/reports`);
   }
+
+  login(username: string, password: string): Observable<any> {
+    return this.http.get(`${this.baseUrl}/login`);
+  }
 }

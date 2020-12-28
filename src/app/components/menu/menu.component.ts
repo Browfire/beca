@@ -1,7 +1,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Folder, Report } from '../dos/dos.component';
-import { ApiService } from '../services/api.service';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-menu',
@@ -32,7 +32,7 @@ export class MenuComponent implements OnInit {
     })
   }
 
-  onSubmit(){
+  onSubmit() {
     const selectedCategory = this.formMenu.controls.selectCategories.value;
     const selectedReport = this.formMenu.controls.selectReports.value;
     console.log('Categoría seleccionada: ', selectedCategory);

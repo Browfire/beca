@@ -1,8 +1,10 @@
 {
     "login": {
         "username": "usuario@mail.com",
-        "name": "usuario"
+        "name": "usuario",
+        "role": "Admin"
     },
+
     "folders": [
         { 
             "name" : "Categoria 1"
